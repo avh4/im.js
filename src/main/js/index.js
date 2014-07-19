@@ -1,3 +1,4 @@
 module.exports = {
-  vector: require('./vector')
+  vector: require('./vector'),
+  map: require('./hash-trie')
 };
