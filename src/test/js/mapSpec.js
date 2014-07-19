@@ -16,4 +16,9 @@ describe('map', function() {
     var v = im.map().assoc('v', 7).assoc('w', 8);
     expect(v.toObject()).to.eql({ v: 7, w: 8});
   });
+
+  it('can retrieve values', function() {
+    var v = im.map().assoc('v', 7);
+    expect(v.get('v')).to.eql(7);
+  });
 });

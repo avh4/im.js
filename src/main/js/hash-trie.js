@@ -8,6 +8,9 @@ function Map(trie) {
   this.toObject = function() {
     return p.mutable(this.trie);
   }
+  this.get = function(k) {
+    return p.get(this.trie, k);
+  }
 }
 
 module.exports = function() {
