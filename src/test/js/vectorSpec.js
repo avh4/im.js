@@ -16,4 +16,12 @@ describe('vector', function() {
     var v = im.vector().push(7).push(8);
     expect(v.toArray()).to.eql([7, 8]);
   });
+
+  it('can be iterated', function() {
+    var capture = [];
+    im.vector().push(2).push(3).push(4).forEach(function(v) {
+      capture.push(v);
+    })
+    expect(capture).to.eql([2, 3, 4]);
+  })
 });

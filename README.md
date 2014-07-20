@@ -10,3 +10,4 @@ Future:
 
  - Improve hash trie using "Array-Mapping" (Bagwell (2001) - Ideal Hash Tries), described in [hughfdjackson/persistent-hash-trie #10](https://github.com/hughfdjackson/persistent-hash-trie/issues/10)
  - convenience wrappers around persistent-hash-trie [hughfdjackson/immutable](https://github.com/hughfdjackson/immutable)
+ - Improve performance of `vector.forEach` by directly iterating and not relying on `toArray`

@@ -24,6 +24,7 @@ Vec = function (node, count) {
     this.pop = function () { return count > 0 ? new Vec(pop(node, count, depth), count - 1) : this; };
     this.toArray = function (into) { return to_array(node, depth, into || []); };
     this.toString = function () { return '[' + print(node, depth) + ']'; };
+    this.forEach = function (fn) { return this.toArray().forEach(fn); };
 };
 
 tree_depth = function (count) {
